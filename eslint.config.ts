@@ -1,19 +1,16 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import react from 'eslint-plugin-react'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import jsxA11y from 'eslint-plugin-jsx-a11y'
-import tseslint from 'typescript-eslint'
-import { defineConfig, globalIgnores } from 'eslint/config'
-import { Linter } from 'eslint'
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import tseslint from 'typescript-eslint';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import { Linter } from 'eslint';
 
 const globalRules: Linter.RulesRecord = {
   /* TypeScript */
-  '@typescript-eslint/no-unused-vars': [
-    'warn',
-    { argsIgnorePattern: '^_' },
-  ],
+  '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 
   /* React */
   'react/react-in-jsx-scope': 'off',
@@ -31,9 +28,9 @@ const globalRules: Linter.RulesRecord = {
     'warn',
     { allowConstantExport: true },
   ],
-}
+};
 
-const testRules: Linter.RulesRecord = {}
+const testRules: Linter.RulesRecord = {};
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -58,10 +55,10 @@ export default defineConfig([
         version: 'detect',
       },
     },
-    rules: globalRules
+    rules: globalRules,
   },
   {
     files: ['**/*.(spec|test).{ts,tsx}'],
-    rules: testRules
-  }
-])
+    rules: testRules,
+  },
+]);

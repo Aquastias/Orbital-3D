@@ -1,11 +1,18 @@
-import './App.css'
+import { Canvas } from '@react-three/fiber';
+
+import './App.css';
 
 const App = () => {
   return (
-    <>
-      App  
-    </>
-  )
-}
+    <div id="canvas-container">
+      <Canvas>
+        <mesh>
+          <boxGeometry />
+          <meshStandardMaterial />
+        </mesh>
+      </Canvas>
+    </div>
+  );
+};
 
-export default App
+export default App;
