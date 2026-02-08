@@ -15,6 +15,7 @@ const globalRules: Linter.RulesRecord = {
   /* React */
   'react/react-in-jsx-scope': 'off',
   'react/prop-types': 'off',
+  'react/no-unknown-property': 'off',
 
   /* Hooks */
   'react-hooks/rules-of-hooks': 'error',
