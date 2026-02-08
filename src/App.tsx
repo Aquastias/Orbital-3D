@@ -6,9 +6,10 @@ const App = () => {
   return (
     <div id="canvas-container">
       <Canvas>
+        <pointLight />
         <mesh>
-          <boxGeometry />
-          <meshStandardMaterial />
+          <sphereGeometry />
+          <meshStandardMaterial color="hotpink" />
         </mesh>
       </Canvas>
     </div>
