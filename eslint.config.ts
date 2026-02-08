@@ -20,6 +20,7 @@ const globalRules: Linter.RulesRecord = {
   /* Hooks */
   'react-hooks/rules-of-hooks': 'error',
   'react-hooks/exhaustive-deps': 'warn',
+  'react-hooks/refs': 'off',
 
   /* a11y */
   'jsx-a11y/no-autofocus': 'off',
