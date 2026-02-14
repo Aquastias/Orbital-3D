@@ -1,28 +1,28 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ESNext",
+    "erasableSyntaxOnly": true,
     "lib": ["ESNext"],
     "module": "ESNext",
-    "types": ["node"],
-    "skipLibCheck": true,
+    "moduleDetection": "force",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
     "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "target": "ESNext",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "types": ["node"],
+    "verbatimModuleSyntax": true
   },
   "include": ["vite.config.ts"]
 }
